@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 DEC 2018 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  6 JAN 2019 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -227,22 +227,16 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 )
 (./spa3_303039534.aux
 
-LaTeX Warning: Label `fig:sim' multiply defined.
+LaTeX Warning: Label `fig:descent' multiply defined.
 
 
-LaTeX Warning: Label `fig:prot' multiply defined.
+LaTeX Warning: Label `fig:models' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:prot' multiply defined.
+LaTeX Warning: Label `fig:models' multiply defined.
 
 
-LaTeX Warning: Label `fig:domains' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:domains' multiply defined.
-
-
-LaTeX Warning: Label `fig:4elj' multiply defined.
+LaTeX Warning: Label `fig:models' multiply defined.
 
 )
 \openout1 = `spa3_303039534.aux'.
@@ -363,105 +357,244 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count120
-<dmin.png, id=1, 462.528pt x 346.896pt>
-File: dmin.png Graphic file (type png)
-<use dmin.png>
-Package pdftex.def Info: dmin.png  used on input line 62.
-(pdftex.def)             Requested size: 256.55872pt x 192.42897pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+<dmin1.png, id=1, 361.35pt x 361.35pt>
+File: dmin1.png Graphic file (type png)
+<use dmin1.png>
+Package pdftex.def Info: dmin1.png  used on input line 59.
+(pdftex.def)             Requested size: 169.3297pt x 169.33333pt.
+<dmin2.png, id=4, 361.35pt x 361.35pt>
+File: dmin2.png Graphic file (type png)
+<use dmin2.png>
+Package pdftex.def Info: dmin2.png  used on input line 66.
+(pdftex.def)             Requested size: 169.3297pt x 169.33333pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<RI50s_gray.png, id=4, 357.7365pt x 339.669pt>
+<RI50s_gray.png, id=6, 357.7365pt x 339.669pt>
 File: RI50s_gray.png Graphic file (type png)
 <use RI50s_gray.png>
-Package pdftex.def Info: RI50s_gray.png  used on input line 82.
-(pdftex.def)             Requested size: 256.55872pt x 243.60783pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<similarity_gray_good.png, id=6, 359.9046pt x 333.1647pt>
-File: similarity_gray_good.png Graphic file (type png)
-<use similarity_gray_good.png>
-Package pdftex.def Info: similarity_gray_good.png  used on input line 91.
-(pdftex.def)             Requested size: 256.55872pt x 237.51448pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<project_descent.png, id=8, 462.528pt x 346.896pt>
-File: project_descent.png Graphic file (type png)
-<use project_descent.png>
-Package pdftex.def Info: project_descent.png  used on input line 104.
-(pdftex.def)             Requested size: 256.55872pt x 192.42897pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<square.png, id=10, 361.35pt x 361.35pt>
-File: square.png Graphic file (type png)
-<use square.png>
-Package pdftex.def Info: square.png  used on input line 121.
-(pdftex.def)             Requested size: 194.98712pt x 194.98825pt.
-<hexagonal.png, id=12, 361.35pt x 361.35pt>
-File: hexagonal.png Graphic file (type png)
-<use hexagonal.png>
-Package pdftex.def Info: hexagonal.png  used on input line 128.
-(pdftex.def)             Requested size: 194.98712pt x 194.98825pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<plot_seq294.png, id=14, 361.35pt x 361.35pt>
-File: plot_seq294.png Graphic file (type png)
-<use plot_seq294.png>
-Package pdftex.def Info: plot_seq294.png  used on input line 141.
-(pdftex.def)             Requested size: 194.98712pt x 194.98825pt.
-<plot_bd302.png, id=16, 361.35pt x 361.35pt>
-File: plot_bd302.png Graphic file (type png)
-<use plot_bd302.png>
-Package pdftex.def Info: plot_bd302.png  used on input line 148.
-(pdftex.def)             Requested size: 194.98712pt x 194.98825pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: RI50s_gray.png  used on input line 97.
+(pdftex.def)             Requested size: 205.24384pt x 194.87798pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./dmin.
-png>] [2 <./RI50s_gray.png>] [3 <./similarity_gray_good.png> <./project_descent
-.png>] [4 <./square.png> <./hexagonal.png> <./plot_seq294.png> <./plot_bd302.pn
-g>] (./spa3_303039534.aux)
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./dmin1
+.png> <./dmin2.png>]
+<ref.png, id=24, 361.35pt x 361.35pt>
+File: ref.png Graphic file (type png)
+<use ref.png>
+Package pdftex.def Info: ref.png  used on input line 131.
+(pdftex.def)             Requested size: 194.98712pt x 194.98825pt.
+<similarity_gray_good.png, id=26, 359.9046pt x 333.1647pt>
+File: similarity_gray_good.png Graphic file (type png)
+<use similarity_gray_good.png>
+Package pdftex.def Info: similarity_gray_good.png  used on input line 138.
+(pdftex.def)             Requested size: 194.98712pt x 180.50612pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./RI50s_gray.png>]
+<descent.png, id=37, 389.5353pt x 270.2898pt>
+File: descent.png Graphic file (type png)
+<use descent.png>
+Package pdftex.def Info: descent.png  used on input line 162.
+(pdftex.def)             Requested size: 164.20134pt x 109.70232pt.
+<projected_descent.png, id=39, 372.1905pt x 281.1303pt>
+File: projected_descent.png Graphic file (type png)
+<use projected_descent.png>
+Package pdftex.def Info: projected_descent.png  used on input line 169.
+(pdftex.def)             Requested size: 179.59422pt x 130.80971pt.
+ [3 <./ref.png> <./similarity_gray_good.png> <./descent.png> <./projected_desce
+nt.png>]
+<mean_sd_opt.png, id=54, 386.6445pt x 270.2898pt>
+File: mean_sd_opt.png Graphic file (type png)
+<use mean_sd_opt.png>
+Package pdftex.def Info: mean_sd_opt.png  used on input line 186.
+(pdftex.def)             Requested size: 205.24384pt x 143.47974pt.
+<square.png, id=56, 361.35pt x 361.35pt>
+File: square.png Graphic file (type png)
+<use square.png>
+Package pdftex.def Info: square.png  used on input line 207.
+(pdftex.def)             Requested size: 153.9368pt x 144.31773pt.
+<hexagonal.png, id=58, 361.35pt x 361.35pt>
+File: hexagonal.png Graphic file (type png)
+<use hexagonal.png>
+Package pdftex.def Info: hexagonal.png  used on input line 214.
+(pdftex.def)             Requested size: 153.9368pt x 144.31773pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./mean_sd_opt.png>]
+<plot_seq294.png, id=65, 361.35pt x 361.35pt>
+File: plot_seq294.png Graphic file (type png)
+<use plot_seq294.png>
+Package pdftex.def Info: plot_seq294.png  used on input line 269.
+(pdftex.def)             Requested size: 153.9368pt x 144.31773pt.
+<plot_bd302.png, id=67, 361.35pt x 361.35pt>
+File: plot_bd302.png Graphic file (type png)
+<use plot_bd302.png>
+Package pdftex.def Info: plot_bd302.png  used on input line 276.
+(pdftex.def)             Requested size: 153.9368pt x 144.31773pt.
+ [5 <./square.png> <./hexagonal.png> <./plot_seq294.png> <./plot_bd302.png>]
+<temp/jammed_12_12584.png, id=80, 361.35pt x 361.35pt>
+File: temp/jammed_12_12584.png Graphic file (type png)
+<use temp/jammed_12_12584.png>
+Package pdftex.def Info: temp/jammed_12_12584.png  used on input line 309.
+(pdftex.def)             Requested size: 153.9368pt x 153.93895pt.
+<temp/24_pack_end.png, id=82, 361.35pt x 361.35pt>
+File: temp/24_pack_end.png Graphic file (type png)
+<use temp/24_pack_end.png>
+Package pdftex.def Info: temp/24_pack_end.png  used on input line 316.
+(pdftex.def)             Requested size: 153.9368pt x 153.93895pt.
+<temp/24_irregular.png, id=84, 361.35pt x 361.35pt>
+File: temp/24_irregular.png Graphic file (type png)
+<use temp/24_irregular.png>
+Package pdftex.def Info: temp/24_irregular.png  used on input line 323.
+(pdftex.def)             Requested size: 153.9368pt x 153.93895pt.
+ [6 <./temp/jammed_12_12584.png> <./temp/24_pack_end.png> <./temp/24_irregular.
+png>]
+<temp/24_pack_4051.png, id=95, 361.35pt x 361.35pt>
+File: temp/24_pack_4051.png Graphic file (type png)
+<use temp/24_pack_4051.png>
+Package pdftex.def Info: temp/24_pack_4051.png  used on input line 341.
+(pdftex.def)             Requested size: 123.151pt x 123.15018pt.
+<temp/24_pack_6152.png, id=97, 361.35pt x 361.35pt>
+File: temp/24_pack_6152.png Graphic file (type png)
+<use temp/24_pack_6152.png>
+Package pdftex.def Info: temp/24_pack_6152.png  used on input line 348.
+(pdftex.def)             Requested size: 123.151pt x 123.15018pt.
+<temp/24_pack_8006.png, id=99, 361.35pt x 361.35pt>
+File: temp/24_pack_8006.png Graphic file (type png)
+<use temp/24_pack_8006.png>
+Package pdftex.def Info: temp/24_pack_8006.png  used on input line 355.
+(pdftex.def)             Requested size: 123.151pt x 123.15018pt.
+File: temp/24_pack_end.png Graphic file (type png)
+<use temp/24_pack_end.png>
+Package pdftex.def Info: temp/24_pack_end.png  used on input line 362.
+(pdftex.def)             Requested size: 123.151pt x 123.15018pt.
+<temp/408_opt_865.png, id=102, 361.35pt x 361.35pt>
+File: temp/408_opt_865.png Graphic file (type png)
+<use temp/408_opt_865.png>
+Package pdftex.def Info: temp/408_opt_865.png  used on input line 380.
+(pdftex.def)             Requested size: 159.06516pt x 159.0704pt.
+<temp/408_opt_1518.png, id=104, 361.35pt x 361.35pt>
+File: temp/408_opt_1518.png Graphic file (type png)
+<use temp/408_opt_1518.png>
+Package pdftex.def Info: temp/408_opt_1518.png  used on input line 387.
+(pdftex.def)             Requested size: 159.06516pt x 159.0704pt.
+<temp/408_opt_200.png, id=106, 361.35pt x 361.35pt>
+File: temp/408_opt_200.png Graphic file (type png)
+<use temp/408_opt_200.png>
+Package pdftex.def Info: temp/408_opt_200.png  used on input line 394.
+(pdftex.def)             Requested size: 159.06516pt x 159.0704pt.
+ [7 <./temp/24_pack_4051.png> <./temp/24_pack_6152.png> <./temp/24_pack_8006.pn
+g> <./temp/408_opt_865.png> <./temp/408_opt_1518.png> <./temp/408_opt_200.png>]
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (./sp3.jl) (./dmin2d.jl [8]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 28.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 28.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+) (./RI50.jl
+[9] [10] [11]) (./saturation.jl [12]) (./birth_death.jl) (./LS_model.jl
+[13]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+ [14] [15]
+Overfull \hbox (12.19418pt too wide) in paragraph at lines 162--163
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.09407pt too wide) in paragraph at lines 197--198
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+[16]
+Overfull \hbox (17.2943pt too wide) in paragraph at lines 239--240
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.99396pt too wide) in paragraph at lines 268--269
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+Overfull \hbox (12.19418pt too wide) in paragraph at lines 313--314
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (17.2943pt too wide) in paragraph at lines 319--320
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.19418pt too wide) in paragraph at lines 361--362
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18]) [19] (./spa3_303039534.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5718 strings out of 492649
- 83673 string characters out of 6129622
- 171426 words of memory out of 5000000
- 9523 multiletter control sequences out of 15000+600000
- 7922 words of font info for 30 fonts, out of 8000000 for 9000
+ 6542 strings out of 492649
+ 92735 string characters out of 6129622
+ 240361 words of memory out of 5000000
+ 10293 multiletter control sequences out of 15000+600000
+ 12929 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,39p,501b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on spa3_303039534.pdf (4 pages, 443245 bytes).
+ 41i,8n,43p,855b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on spa3_303039534.pdf (19 pages, 1167352 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 230 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 
