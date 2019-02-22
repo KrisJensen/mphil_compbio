@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="label" attr.type="string" for="edge" id="d2"/>
+<key attr.name="size" attr.type="long" for="node" id="d1"/>
+<key attr.name="lab" attr.type="string" for="node" id="d0"/>
+<graph edgedefault="undirected"><node id="0">
+  <data key="d0">20</data>
+  <data key="d1">20</data>
+</node>
+<node id="A">
+  <data key="d0">20</data>
+  <data key="d1">20</data>
+</node>
+<node id="AB">
+  <data key="d0">20</data>
+  <data key="d1">20</data>
+</node>
+<node id="ABC">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="ABCD">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="ABCE">
+  <data key="d0">4</data>
+  <data key="d1">4</data>
+</node>
+<node id="ABCEF">
+  <data key="d0">12</data>
+  <data key="d1">12</data>
+</node>
+<node id="ABCDG">
+  <data key="d0">12</data>
+  <data key="d1">12</data>
+</node>
+<node id="ABCDH">
+  <data key="d0">12</data>
+  <data key="d1">12</data>
+</node>
+<edge source="0" target="A">
+  <data key="d2">+A</data>
+</edge>
+<edge source="A" target="AB">
+  <data key="d2">+B</data>
+</edge>
+<edge source="AB" target="ABC">
+  <data key="d2">+C</data>
+</edge>
+<edge source="ABC" target="ABCD">
+  <data key="d2">+D</data>
+</edge>
+<edge source="ABC" target="ABCE">
+  <data key="d2">+E</data>
+</edge>
+<edge source="ABCD" target="ABCDG">
+  <data key="d2">+G</data>
+</edge>
+<edge source="ABCD" target="ABCDH">
+  <data key="d2">+H</data>
+</edge>
+<edge source="ABCE" target="ABCEF">
+  <data key="d2">+F</data>
+</edge>
+</graph></graphml>
