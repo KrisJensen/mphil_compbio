@@ -1,0 +1,26 @@
+base_measure_params:
+  alpha: 1
+  beta: 1
+beta_binomial_precision_params:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  proposal:
+    precision: 0.01
+  value: 1000
+concentration:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  value: 1.0
+density: pyclone_beta_binomial
+init_method: disconnected
+num_iters: 10000
+samples:
+  inputpyclone_0_7CN:
+    error_rate: 0.001
+    mutations_file: pyclone_analysis_0_7CN/yaml/inputpyclone_0_7CN.yaml
+    tumour_content:
+      value: 0.8333333333333334
+trace_dir: trace
+working_dir: /local/data/public/ktj21/ce2/pyclone_analysis_0_7CN

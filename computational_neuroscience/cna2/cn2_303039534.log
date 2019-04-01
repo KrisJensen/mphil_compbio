@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 MAR 2019 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 APR 2019 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,75 +236,6 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-
-LaTeX Warning: Label `eq:update' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1el' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:comp1an' multiply defined.
-
-
-LaTeX Warning: Label `fig:comp1' multiply defined.
-
 )
 \openout1 = `cn2_303039534.aux'.
 
@@ -450,274 +381,471 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/2d_sim1.png, id=16, 289.08pt x 289.08pt>
 File: figures/2d_sim1.png Graphic file (type png)
 <use figures/2d_sim1.png>
-Package pdftex.def Info: figures/2d_sim1.png  used on input line 126.
-(pdftex.def)             Requested size: 153.9368pt x 153.93506pt.
+Package pdftex.def Info: figures/2d_sim1.png  used on input line 123.
+(pdftex.def)             Requested size: 128.27936pt x 125.84009pt.
 <figures/2d_sim2.png, id=19, 289.08pt x 289.08pt>
 File: figures/2d_sim2.png Graphic file (type png)
 <use figures/2d_sim2.png>
-Package pdftex.def Info: figures/2d_sim2.png  used on input line 133.
-(pdftex.def)             Requested size: 153.9368pt x 153.93506pt.
+Package pdftex.def Info: figures/2d_sim2.png  used on input line 130.
+(pdftex.def)             Requested size: 128.27936pt x 125.84009pt.
 <figures/2d_sim3.png, id=21, 289.08pt x 289.08pt>
 File: figures/2d_sim3.png Graphic file (type png)
 <use figures/2d_sim3.png>
-Package pdftex.def Info: figures/2d_sim3.png  used on input line 140.
-(pdftex.def)             Requested size: 153.9368pt x 153.93506pt.
+Package pdftex.def Info: figures/2d_sim3.png  used on input line 137.
+(pdftex.def)             Requested size: 128.27936pt x 125.84009pt.
+ [2 <./figures/2d_sim1.png> <./figures/2d_sim2.png> <./figures/2d_sim3.png>]
+<figures/newmult_2d_sim1_vec.png, id=33, 281.1303pt x 216.0873pt>
+File: figures/newmult_2d_sim1_vec.png Graphic file (type png)
+<use figures/newmult_2d_sim1_vec.png>
+Package pdftex.def Info: figures/newmult_2d_sim1_vec.png  used on input line 15
+3.
+(pdftex.def)             Requested size: 143.67226pt x 109.82712pt.
+<figures/newmult_2d_sim2_vec.png, id=35, 278.2395pt x 216.0873pt>
+File: figures/newmult_2d_sim2_vec.png Graphic file (type png)
+<use figures/newmult_2d_sim2_vec.png>
+Package pdftex.def Info: figures/newmult_2d_sim2_vec.png  used on input line 16
+0.
+(pdftex.def)             Requested size: 143.67226pt x 110.98976pt.
+<figures/newmult_2d_sim3_vec.png, id=37, 278.2395pt x 216.0873pt>
+File: figures/newmult_2d_sim3_vec.png Graphic file (type png)
+<use figures/newmult_2d_sim3_vec.png>
+Package pdftex.def Info: figures/newmult_2d_sim3_vec.png  used on input line 16
+7.
+(pdftex.def)             Requested size: 143.67226pt x 110.98976pt.
+ [3 <./figures/newmult_2d_sim1_vec.png> <./figures/newmult_2d_sim2_vec.png> <./
+figures/newmult_2d_sim3_vec.png>]
+<figures/rho7_slope1_hist.png, id=48, 281.1303pt x 214.6419pt>
+File: figures/rho7_slope1_hist.png Graphic file (type png)
+<use figures/rho7_slope1_hist.png>
+Package pdftex.def Info: figures/rho7_slope1_hist.png  used on input line 213.
+(pdftex.def)             Requested size: 143.67226pt x 108.4398pt.
+<figures/rho7_slope02_hist.png, id=50, 281.1303pt x 214.6419pt>
+File: figures/rho7_slope02_hist.png Graphic file (type png)
+<use figures/rho7_slope02_hist.png>
+Package pdftex.def Info: figures/rho7_slope02_hist.png  used on input line 220.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/2d_sim1_vec.png, id=23, 462.528pt x 346.896pt>
-File: figures/2d_sim1_vec.png Graphic file (type png)
-<use figures/2d_sim1_vec.png>
-Package pdftex.def Info: figures/2d_sim1_vec.png  used on input line 156.
-(pdftex.def)             Requested size: 153.9368pt x 115.45526pt.
-<figures/2d_sim2_vec.png, id=25, 462.528pt x 346.896pt>
-File: figures/2d_sim2_vec.png Graphic file (type png)
-<use figures/2d_sim2_vec.png>
-Package pdftex.def Info: figures/2d_sim2_vec.png  used on input line 163.
-(pdftex.def)             Requested size: 153.9368pt x 115.45526pt.
-<figures/2d_sim3_vec.png, id=27, 462.528pt x 346.896pt>
-File: figures/2d_sim3_vec.png Graphic file (type png)
-<use figures/2d_sim3_vec.png>
-Package pdftex.def Info: figures/2d_sim3_vec.png  used on input line 170.
-(pdftex.def)             Requested size: 153.9368pt x 115.45526pt.
-
-LaTeX Warning: Reference `fig:multiplictive' on page 2 undefined on input line 
-174.
-
-
-LaTeX Warning: Reference `fig:multiplictive' on page 2 undefined on input line 
-174.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2] [3 <./figures/2d_sim1.png> <./figures/2d_sim2.png> <./figures/2d_sim3.png> 
-<./figures/2d_sim1_vec.png> <./figures/2d_sim2_vec.png> <./figures/2d_sim3_vec.
-png>] [4]
-<figures/plot_K.png, id=52, 338.9463pt x 214.6419pt>
+(pdftex.def)             Requested size: 143.67226pt x 108.4398pt.
+ [4 <./figures/rho7_slope1_hist.png> <./figures/rho7_slope02_hist.png>]
+<figures/plot_K.png, id=59, 338.9463pt x 214.6419pt>
 File: figures/plot_K.png Graphic file (type png)
 <use figures/plot_K.png>
-Package pdftex.def Info: figures/plot_K.png  used on input line 289.
-(pdftex.def)             Requested size: 230.90128pt x 146.22311pt.
-<figures/occsimtemp_stds.png, id=54, 334.6101pt x 216.0873pt>
+Package pdftex.def Info: figures/plot_K.png  used on input line 307.
+(pdftex.def)             Requested size: 179.59422pt x 110.20206pt.
+<figures/occsimtemp_stds.png, id=61, 334.6101pt x 216.0873pt>
 File: figures/occsimtemp_stds.png Graphic file (type png)
 <use figures/occsimtemp_stds.png>
-Package pdftex.def Info: figures/occsimtemp_stds.png  used on input line 296.
-(pdftex.def)             Requested size: 230.90128pt x 149.12016pt.
-<figures/occsim_int/i50.png, id=56, 529.7391pt x 135.8676pt>
+Package pdftex.def Info: figures/occsimtemp_stds.png  used on input line 314.
+(pdftex.def)             Requested size: 179.59422pt x 112.48514pt.
+<figures/occsim_int/i50.png, id=63, 529.7391pt x 135.8676pt>
 File: figures/occsim_int/i50.png Graphic file (type png)
 <use figures/occsim_int/i50.png>
-Package pdftex.def Info: figures/occsim_int/i50.png  used on input line 311.
-(pdftex.def)             Requested size: 307.8736pt x 78.96495pt.
-<figures/occsim_int/i200.png, id=58, 529.7391pt x 135.8676pt>
-File: figures/occsim_int/i200.png Graphic file (type png)
-<use figures/occsim_int/i200.png>
-Package pdftex.def Info: figures/occsim_int/i200.png  used on input line 318.
-(pdftex.def)             Requested size: 307.8736pt x 78.96495pt.
-<figures/occsim_int/i300.png, id=60, 529.7391pt x 135.8676pt>
+Package pdftex.def Info: figures/occsim_int/i50.png  used on input line 328.
+(pdftex.def)             Requested size: 251.43036pt x 64.48593pt.
+<figures/occsim_int/i300.png, id=65, 529.7391pt x 135.8676pt>
 File: figures/occsim_int/i300.png Graphic file (type png)
 <use figures/occsim_int/i300.png>
-Package pdftex.def Info: figures/occsim_int/i300.png  used on input line 325.
-(pdftex.def)             Requested size: 307.8736pt x 78.96495pt.
-<figures/occsim_int/i1000.png, id=62, 529.7391pt x 135.8676pt>
+Package pdftex.def Info: figures/occsim_int/i300.png  used on input line 335.
+(pdftex.def)             Requested size: 251.43036pt x 64.48593pt.
+<figures/occsim_int/i200.png, id=67, 529.7391pt x 135.8676pt>
+File: figures/occsim_int/i200.png Graphic file (type png)
+<use figures/occsim_int/i200.png>
+Package pdftex.def Info: figures/occsim_int/i200.png  used on input line 342.
+(pdftex.def)             Requested size: 251.43036pt x 64.48593pt.
+<figures/occsim_int/i1000.png, id=69, 529.7391pt x 135.8676pt>
 File: figures/occsim_int/i1000.png Graphic file (type png)
 <use figures/occsim_int/i1000.png>
-Package pdftex.def Info: figures/occsim_int/i1000.png  used on input line 332.
-(pdftex.def)             Requested size: 307.8736pt x 78.96495pt.
+Package pdftex.def Info: figures/occsim_int/i1000.png  used on input line 349.
+(pdftex.def)             Requested size: 251.43036pt x 64.48593pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./figures/plot_K.png> <./figures/occsimtemp_stds.png>] [6 <./figures/occsim
-_int/i50.png> <./figures/occsim_int/i200.png> <./figures/occsim_int/i300.png> <
-./figures/occsim_int/i1000.png>]
-<figures/plot_Ktilde.png, id=88, 344.7279pt x 214.6419pt>
+[5 <./figures/plot_K.png> <./figures/occsimtemp_stds.png>]
+<figures/plot_Ktilde.png, id=84, 344.7279pt x 214.6419pt>
 File: figures/plot_Ktilde.png Graphic file (type png)
 <use figures/plot_Ktilde.png>
-Package pdftex.def Info: figures/plot_Ktilde.png  used on input line 375.
-(pdftex.def)             Requested size: 230.90128pt x 143.77002pt.
-<figures/plot_eigvec.png, id=90, 347.6187pt x 214.6419pt>
+Package pdftex.def Info: figures/plot_Ktilde.png  used on input line 392.
+(pdftex.def)             Requested size: 179.59422pt x 108.28604pt.
+<figures/plot_eigvec.png, id=86, 347.6187pt x 214.6419pt>
 File: figures/plot_eigvec.png Graphic file (type png)
 <use figures/plot_eigvec.png>
-Package pdftex.def Info: figures/plot_eigvec.png  used on input line 382.
-(pdftex.def)             Requested size: 230.90128pt x 142.57458pt.
-<figures/plot_DFT.png, id=92, 333.1647pt x 214.6419pt>
+Package pdftex.def Info: figures/plot_eigvec.png  used on input line 399.
+(pdftex.def)             Requested size: 179.59422pt x 107.35558pt.
+<figures/plot_DFT.png, id=88, 333.1647pt x 214.6419pt>
 File: figures/plot_DFT.png Graphic file (type png)
 <use figures/plot_DFT.png>
-Package pdftex.def Info: figures/plot_DFT.png  used on input line 396.
-(pdftex.def)             Requested size: 230.90128pt x 148.76137pt.
-<figures/test_maxk.png, id=94, 344.7279pt x 214.6419pt>
+Package pdftex.def Info: figures/plot_DFT.png  used on input line 413.
+(pdftex.def)             Requested size: 179.59422pt x 112.18542pt.
+<figures/test_maxk.png, id=90, 344.7279pt x 214.6419pt>
 File: figures/test_maxk.png Graphic file (type png)
 <use figures/test_maxk.png>
-Package pdftex.def Info: figures/test_maxk.png  used on input line 402.
-(pdftex.def)             Requested size: 230.90128pt x 143.77002pt.
- [7 <./figures/plot_Ktilde.png> <./figures/plot_eigvec.png> <./figures/plot_DFT
-.png> <./figures/test_maxk.png>]
-<figures/occsim_012_heat.png, id=109, 579.6054pt x 102.6234pt>
+Package pdftex.def Info: figures/test_maxk.png  used on input line 420.
+(pdftex.def)             Requested size: 179.59422pt x 108.28604pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./figures/occsim_int/i50.png> <./figures/occsim_int/i300.png> <./figures/oc
+csim_int/i200.png> <./figures/occsim_int/i1000.png> <./figures/plot_Ktilde.png>
+ <./figures/plot_eigvec.png>]
+<figures/occsim_012_heat.png, id=108, 579.6054pt x 102.6234pt>
 File: figures/occsim_012_heat.png Graphic file (type png)
 <use figures/occsim_012_heat.png>
-Package pdftex.def Info: figures/occsim_012_heat.png  used on input line 423.
+Package pdftex.def Info: figures/occsim_012_heat.png  used on input line 440.
 (pdftex.def)             Requested size: 307.8736pt x 54.51071pt.
-<figures/occsim_066_heat.png, id=111, 579.6054pt x 102.6234pt>
+<figures/occsim_066_heat.png, id=110, 579.6054pt x 102.6234pt>
 File: figures/occsim_066_heat.png Graphic file (type png)
 <use figures/occsim_066_heat.png>
-Package pdftex.def Info: figures/occsim_066_heat.png  used on input line 430.
+Package pdftex.def Info: figures/occsim_066_heat.png  used on input line 447.
 (pdftex.def)             Requested size: 307.8736pt x 54.51071pt.
-<figures/occsim_174_heat.png, id=113, 579.6054pt x 102.6234pt>
+<figures/occsim_174_heat.png, id=112, 579.6054pt x 102.6234pt>
 File: figures/occsim_174_heat.png Graphic file (type png)
 <use figures/occsim_174_heat.png>
-Package pdftex.def Info: figures/occsim_174_heat.png  used on input line 437.
+Package pdftex.def Info: figures/occsim_174_heat.png  used on input line 454.
 (pdftex.def)             Requested size: 307.8736pt x 54.51071pt.
- [8 <./figures/occsim_012_heat.png> <./figures/occsim_066_heat.png> <./figures/
-occsim_174_heat.png>]
-<figures/Ls.png, id=124, 391.7034pt x 327.3831pt>
+ [7 <./figures/plot_DFT.png> <./figures/test_maxk.png> <./figures/occsim_012_he
+at.png> <./figures/occsim_066_heat.png> <./figures/occsim_174_heat.png>]
+<figures/Ls.png, id=128, 391.7034pt x 327.3831pt>
 File: figures/Ls.png Graphic file (type png)
 <use figures/Ls.png>
-Package pdftex.def Info: figures/Ls.png  used on input line 488.
+Package pdftex.def Info: figures/Ls.png  used on input line 503.
 (pdftex.def)             Requested size: 179.59422pt x 141.74475pt.
-<figures/Ts.png, id=126, 394.5942pt x 327.3831pt>
+<figures/Ts.png, id=130, 394.5942pt x 327.3831pt>
 File: figures/Ts.png Graphic file (type png)
 <use figures/Ts.png>
-Package pdftex.def Info: figures/Ts.png  used on input line 495.
+Package pdftex.def Info: figures/Ts.png  used on input line 510.
 (pdftex.def)             Requested size: 179.59422pt x 140.66518pt.
-<figures/optimum_1.png, id=128, 361.35pt x 361.35pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/optimum_1.png, id=132, 361.35pt x 361.35pt>
 File: figures/optimum_1.png Graphic file (type png)
 <use figures/optimum_1.png>
-Package pdftex.def Info: figures/optimum_1.png  used on input line 513.
+Package pdftex.def Info: figures/optimum_1.png  used on input line 528.
 (pdftex.def)             Requested size: 123.151pt x 123.15231pt.
-<figures/int/optimum_K6_011.png, id=130, 361.35pt x 361.35pt>
+<figures/int/optimum_K6_011.png, id=134, 361.35pt x 361.35pt>
 File: figures/int/optimum_K6_011.png Graphic file (type png)
 <use figures/int/optimum_K6_011.png>
-Package pdftex.def Info: figures/int/optimum_K6_011.png  used on input line 520
+Package pdftex.def Info: figures/int/optimum_K6_011.png  used on input line 535
 .
 (pdftex.def)             Requested size: 123.151pt x 123.15231pt.
-<figures/int/optimum_K16_004.png, id=132, 361.35pt x 361.35pt>
+<figures/int/optimum_K16_004.png, id=136, 361.35pt x 361.35pt>
 File: figures/int/optimum_K16_004.png Graphic file (type png)
 <use figures/int/optimum_K16_004.png>
-Package pdftex.def Info: figures/int/optimum_K16_004.png  used on input line 52
-7.
+Package pdftex.def Info: figures/int/optimum_K16_004.png  used on input line 54
+2.
 (pdftex.def)             Requested size: 123.151pt x 123.15231pt.
-<figures/optimum_2.png, id=134, 361.35pt x 361.35pt>
+<figures/optimum_2.png, id=138, 361.35pt x 361.35pt>
 File: figures/optimum_2.png Graphic file (type png)
 <use figures/optimum_2.png>
-Package pdftex.def Info: figures/optimum_2.png  used on input line 534.
+Package pdftex.def Info: figures/optimum_2.png  used on input line 549.
 (pdftex.def)             Requested size: 123.151pt x 123.15231pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./figures/Ls.png> <./figures/Ts.png>]
+[8] [9 <./figures/Ls.png> <./figures/Ts.png> <./figures/optimum_1.png> <./figur
+es/int/optimum_K6_011.png> <./figures/int/optimum_K16_004.png> <./figures/optim
+um_2.png>]
 File: figures/optimum_2.png Graphic file (type png)
 <use figures/optimum_2.png>
-Package pdftex.def Info: figures/optimum_2.png  used on input line 584.
-(pdftex.def)             Requested size: 143.67226pt x 143.67294pt.
-<figures/orig_citiesmin.png, id=144, 361.35pt x 361.35pt>
+Package pdftex.def Info: figures/optimum_2.png  used on input line 598.
+(pdftex.def)             Requested size: 138.5439pt x 138.54517pt.
+<figures/orig_citiesmin.png, id=159, 361.35pt x 361.35pt>
 File: figures/orig_citiesmin.png Graphic file (type png)
 <use figures/orig_citiesmin.png>
-Package pdftex.def Info: figures/orig_citiesmin.png  used on input line 591.
-(pdftex.def)             Requested size: 143.67226pt x 143.67294pt.
+Package pdftex.def Info: figures/orig_citiesmin.png  used on input line 605.
+(pdftex.def)             Requested size: 138.5439pt x 138.54517pt.
+<figures/rand1_2.png, id=161, 361.35pt x 361.35pt>
+File: figures/rand1_2.png Graphic file (type png)
+<use figures/rand1_2.png>
+Package pdftex.def Info: figures/rand1_2.png  used on input line 622.
+(pdftex.def)             Requested size: 138.5439pt x 138.54517pt.
+<figures/rand1_citiesmin.png, id=163, 361.35pt x 361.35pt>
+File: figures/rand1_citiesmin.png Graphic file (type png)
+<use figures/rand1_citiesmin.png>
+Package pdftex.def Info: figures/rand1_citiesmin.png  used on input line 629.
+(pdftex.def)             Requested size: 138.5439pt x 138.54517pt.
+ [10 <./figures/orig_citiesmin.png> <./figures/rand1_2.png> <./figures/rand1_ci
+tiesmin.png>]
+<figures/N20M40l05d05_2_dominance.png, id=175, 286.1892pt x 286.1892pt>
+File: figures/N20M40l05d05_2_dominance.png Graphic file (type png)
+<use figures/N20M40l05d05_2_dominance.png>
+Package pdftex.def Info: figures/N20M40l05d05_2_dominance.png  used on input li
+ne 655.
+(pdftex.def)             Requested size: 107.7581pt x 105.79932pt.
+<figures/N20M40l075d05_2_dominance.png, id=177, 286.1892pt x 286.1892pt>
+File: figures/N20M40l075d05_2_dominance.png Graphic file (type png)
+<use figures/N20M40l075d05_2_dominance.png>
+Package pdftex.def Info: figures/N20M40l075d05_2_dominance.png  used on input l
+ine 662.
+(pdftex.def)             Requested size: 107.7581pt x 105.79932pt.
+<figures/N20M40l100d05_2_dominance.png, id=179, 286.1892pt x 286.1892pt>
+File: figures/N20M40l100d05_2_dominance.png Graphic file (type png)
+<use figures/N20M40l100d05_2_dominance.png>
+Package pdftex.def Info: figures/N20M40l100d05_2_dominance.png  used on input l
+ine 669.
+(pdftex.def)             Requested size: 107.7581pt x 105.79932pt.
+<figures/N20M40l075d05_1_xvals.png, id=181, 286.1892pt x 286.1892pt>
+File: figures/N20M40l075d05_1_xvals.png Graphic file (type png)
+<use figures/N20M40l075d05_1_xvals.png>
+Package pdftex.def Info: figures/N20M40l075d05_1_xvals.png  used on input line 
+686.
+(pdftex.def)             Requested size: 102.62192pt x 100.75613pt.
+<figures/N20M40l075d05_2_xvals.png, id=183, 286.1892pt x 286.1892pt>
+File: figures/N20M40l075d05_2_xvals.png Graphic file (type png)
+<use figures/N20M40l075d05_2_xvals.png>
+Package pdftex.def Info: figures/N20M40l075d05_2_xvals.png  used on input line 
+693.
+(pdftex.def)             Requested size: 102.62192pt x 100.75613pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `tspsim' on page 10 undefined on input line 599.
-
-[10 <./figures/optimum_1.png> <./figures/int/optimum_K6_011.png> <./figures/int
-/optimum_K16_004.png> <./figures/optimum_2.png>]
-<figures/rand1_2.png, id=157, 361.35pt x 361.35pt>
-File: figures/rand1_2.png Graphic file (type png)
-<use figures/rand1_2.png>
-Package pdftex.def Info: figures/rand1_2.png  used on input line 609.
-(pdftex.def)             Requested size: 143.67226pt x 143.67294pt.
-<figures/rand1_citiesmin.png, id=159, 361.35pt x 361.35pt>
-File: figures/rand1_citiesmin.png Graphic file (type png)
-<use figures/rand1_citiesmin.png>
-Package pdftex.def Info: figures/rand1_citiesmin.png  used on input line 616.
-(pdftex.def)             Requested size: 143.67226pt x 143.67294pt.
- [11 <./figures/orig_citiesmin.png> <./figures/rand1_2.png> <./figures/rand1_ci
-tiesmin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 642--647
-
- []
-
-[12]
-<figures/learn50000_xs.png, id=174, 332.442pt x 214.6419pt>
+[11 <./figures/N20M40l05d05_2_dominance.png> <./figures/N20M40l075d05_2_dominan
+ce.png> <./figures/N20M40l100d05_2_dominance.png>] [12 <./figures/N20M40l075d05
+_1_xvals.png> <./figures/N20M40l075d05_2_xvals.png>]
+<figures/learn50000_xs.png, id=201, 332.442pt x 214.6419pt>
 File: figures/learn50000_xs.png Graphic file (type png)
 <use figures/learn50000_xs.png>
-Package pdftex.def Info: figures/learn50000_xs.png  used on input line 709.
-(pdftex.def)             Requested size: 143.67226pt x 92.76256pt.
-<figures/learn50000_thetas.png, id=176, 338.9463pt x 214.6419pt>
+Package pdftex.def Info: figures/learn50000_xs.png  used on input line 771.
+(pdftex.def)             Requested size: 153.9368pt x 95.2975pt.
+<figures/learn50000_thetas.png, id=203, 338.9463pt x 214.6419pt>
 File: figures/learn50000_thetas.png Graphic file (type png)
 <use figures/learn50000_thetas.png>
-Package pdftex.def Info: figures/learn50000_thetas.png  used on input line 716.
+Package pdftex.def Info: figures/learn50000_thetas.png  used on input line 778.
 
-(pdftex.def)             Requested size: 143.67226pt x 90.98415pt.
-<figures/learn1000_xs_thetas.png, id=178, 341.8371pt x 214.6419pt>
+(pdftex.def)             Requested size: 153.9368pt x 95.75821pt.
+<figures/learn1000_xs_thetas.png, id=205, 341.8371pt x 214.6419pt>
 File: figures/learn1000_xs_thetas.png Graphic file (type png)
 <use figures/learn1000_xs_thetas.png>
-Package pdftex.def Info: figures/learn1000_xs_thetas.png  used on input line 73
-1.
-(pdftex.def)             Requested size: 143.67226pt x 90.21448pt.
-<figures/learnvs_vs.png, id=180, 424.2249pt x 286.1892pt>
+Package pdftex.def Info: figures/learn1000_xs_thetas.png  used on input line 79
+6.
+(pdftex.def)             Requested size: 159.06516pt x 102.04132pt.
+<figures/learnvs_vs.png, id=207, 424.2249pt x 286.1892pt>
 File: figures/learnvs_vs.png Graphic file (type png)
 <use figures/learnvs_vs.png>
-Package pdftex.def Info: figures/learnvs_vs.png  used on input line 738.
-(pdftex.def)             Requested size: 143.67226pt x 96.92311pt.
-<figures/learn500000_performance.png, id=182, 343.2825pt x 214.6419pt>
+Package pdftex.def Info: figures/learnvs_vs.png  used on input line 803.
+(pdftex.def)             Requested size: 189.85094pt x 99.94952pt.
+ [13 <./figures/learn50000_xs.png> <./figures/learn50000_thetas.png> <./figures
+/learn1000_xs_thetas.png> <./figures/learnvs_vs.png>]
+<figures/learn500000_performance.png, id=221, 343.2825pt x 214.6419pt>
 File: figures/learn500000_performance.png Graphic file (type png)
 <use figures/learn500000_performance.png>
 Package pdftex.def Info: figures/learn500000_performance.png  used on input lin
-e 750.
-(pdftex.def)             Requested size: 143.67226pt x 89.83128pt.
-<figures/real_meanperformance.png, id=184, 343.2825pt x 214.6419pt>
+e 819.
+(pdftex.def)             Requested size: 153.9368pt x 92.19727pt.
+<figures/real_meanperformance.png, id=223, 343.2825pt x 214.6419pt>
 File: figures/real_meanperformance.png Graphic file (type png)
 <use figures/real_meanperformance.png>
-Package pdftex.def Info: figures/real_meanperformance.png  used on input line 7
-57.
-(pdftex.def)             Requested size: 143.67226pt x 89.83128pt.
-<figures/real_delta_lambda_heat.png, id=186, 382.3083pt x 327.3831pt>
+Package pdftex.def Info: figures/real_meanperformance.png  used on input line 8
+26.
+(pdftex.def)             Requested size: 153.9368pt x 92.19727pt.
+<figures/real_delta_lambda_heat.png, id=225, 382.3083pt x 327.3831pt>
 File: figures/real_delta_lambda_heat.png Graphic file (type png)
 <use figures/real_delta_lambda_heat.png>
 Package pdftex.def Info: figures/real_delta_lambda_heat.png  used on input line
- 769.
-(pdftex.def)             Requested size: 143.67226pt x 123.03311pt.
-<figures/test_alpha_beta_heat.png, id=188, 401.0985pt x 327.3831pt>
+ 840.
+(pdftex.def)             Requested size: 143.67226pt x 115.48875pt.
+<figures/test_alpha_beta_heat.png, id=227, 401.0985pt x 327.3831pt>
 File: figures/test_alpha_beta_heat.png Graphic file (type png)
 <use figures/test_alpha_beta_heat.png>
-Package pdftex.def Info: figures/test_alpha_beta_heat.png  used on input line 7
-76.
-(pdftex.def)             Requested size: 143.67226pt x 117.26836pt.
-<figures/test_mp_l_heat.png, id=190, 382.3083pt x 327.3831pt>
+Package pdftex.def Info: figures/test_alpha_beta_heat.png  used on input line 8
+47.
+(pdftex.def)             Requested size: 143.67226pt x 110.07748pt.
+<figures/test_mp_l_heat.png, id=229, 382.3083pt x 327.3831pt>
 File: figures/test_mp_l_heat.png Graphic file (type png)
 <use figures/test_mp_l_heat.png>
-Package pdftex.def Info: figures/test_mp_l_heat.png  used on input line 782.
-(pdftex.def)             Requested size: 143.67226pt x 123.03311pt.
+Package pdftex.def Info: figures/test_mp_l_heat.png  used on input line 854.
+(pdftex.def)             Requested size: 143.67226pt x 115.48875pt.
+ [14 <./figures/learn500000_performance.png> <./figures/real_meanperformance.pn
+g> <./figures/real_delta_lambda_heat.png> <./figures/test_alpha_beta_heat.png> 
+<./figures/test_mp_l_heat.png>]
+<figures/compare_layers.png, id=244, 392.4261pt x 158.994pt>
+File: figures/compare_layers.png Graphic file (type png)
+<use figures/compare_layers.png>
+Package pdftex.def Info: figures/compare_layers.png  used on input line 916.
+(pdftex.def)             Requested size: 307.8736pt x 124.74263pt.
+ [15 <./figures/compare_layers.png>]
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(./unsupervised_learning.jl
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 36.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 36.
+ [16] [17]
+[18]) (./ocular_dominance.jl
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [19] [20]
+Overfull \hbox (86.88866pt too wide) in paragraph at lines 164--165
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[21]) (./TSP.jl [22] [23]
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 130--131
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (50.88829pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+[25]
+Overfull \hbox (32.8881pt too wide) in paragraph at lines 196--197
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (38.88817pt too wide) in paragraph at lines 210--211
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
 
-[13 <./figures/learn50000_xs.png> <./figures/learn50000_thetas.png> <./figures/
-learn1000_xs_thetas.png> <./figures/learnvs_vs.png> <./figures/learn500000_perf
-ormance.png> <./figures/real_meanperformance.png>] [14 <./figures/real_delta_la
-mbda_heat.png> <./figures/test_alpha_beta_heat.png> <./figures/test_mp_l_heat.p
-ng>] (./cn2_303039534.aux)
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (38.88817pt too wide) in paragraph at lines 211--212
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
 
+
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 216--218
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./elastic_net_OD.jl [26] [27]
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 127--128
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28]
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 143--144
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [29] (./cart_pole.jl [30] [31] [32]
+Overfull \hbox (62.88841pt too wide) in paragraph at lines 184--185
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (14.88792pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 214--215
+[][][][][][][][][][][][][][][][] 
+ []
+
+[33]
+Overfull \hbox (20.88799pt too wide) in paragraph at lines 230--232
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (20.88799pt too wide) in paragraph at lines 251--252
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.88792pt too wide) in paragraph at lines 270--271
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (44.88823pt too wide) in paragraph at lines 285--287
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+[34]
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 290--291
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (14.88792pt too wide) in paragraph at lines 315--316
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.88792pt too wide) in paragraph at lines 316--317
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (242.89024pt too wide) in paragraph at lines 319--320
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.88817pt too wide) in paragraph at lines 320--321
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.88817pt too wide) in paragraph at lines 321--322
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (86.88866pt too wide) in paragraph at lines 322--323
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[35]
+Overfull \hbox (20.88799pt too wide) in paragraph at lines 352--353
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (26.88805pt too wide) in paragraph at lines 378--379
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (38.88817pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+Overfull \hbox (2.8878pt too wide) in paragraph at lines 401--402
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[37]) [38] (./cn2_303039534.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6029 strings out of 492649
- 89990 string characters out of 6129622
- 165502 words of memory out of 5000000
- 9783 multiletter control sequences out of 15000+600000
- 12150 words of font info for 46 fonts, out of 8000000 for 9000
+ 6882 strings out of 492649
+ 99851 string characters out of 6129622
+ 250328 words of memory out of 5000000
+ 10603 multiletter control sequences out of 15000+600000
+ 11851 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,39p,681b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,43p,824b,1763s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -728,19 +856,18 @@ local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cn2_303039534.pdf (14 pages, 812988 bytes).
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on cn2_303039534.pdf (38 pages, 980317 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 384 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 414 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 502 words of extra memory for PDF output out of 10000 (max. 10000000)
 
