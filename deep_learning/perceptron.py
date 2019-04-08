@@ -17,6 +17,7 @@ class perceptron:
         self.ws = np.zeros(N)
         self.gamma = gamma
         self.dim = N
+        self.gamma = 0
         
         return
         
@@ -56,6 +57,9 @@ class perceptron:
             self.ws += epsilon/2*(
                         self.truth[i] - 
                         np.sign(np.dot(self.ws,u)-self.gamma)) * u
+            self.gamma -= epsilon/2*(
+                        self.truth[i] - 
+                        np.sign(np.dot(self.ws,u)-self.gamma))
                     
         err = np.sum(np.abs(self.ws-oldws))
         if Print: print('err:', err)
@@ -70,17 +74,22 @@ class perceptron:
         while train and n < nlim:
             n += 1
             train = self.train_perceptron_round(epsilon)
+        print('final gamma:', self.gamma)
         return
     
     def train_delta_round(self, epsilon, thresh = 10**(-6), Print=False):
         oldws = copy.copy(self.ws)
         delta = np.zeros(len(oldws))
+        dgamma = 0
         for i in range(self.data.shape[1]):
             u = self.data[:,i]
             delta += (self.truth[i] - 
                         np.sign(np.dot(self.ws,u)-self.gamma)) * u
-        
+            dgamma += (self.truth[i] - 
+                        np.sign(np.dot(self.ws,u)-self.gamma))
+            
         self.ws += epsilon*delta
+        self.gamma -= epsilon*dgamma
         err = np.sum(np.abs(self.ws-oldws))
         if Print: print('err:', err)
         if err < thresh: #converged
@@ -94,6 +103,7 @@ class perceptron:
         while train and n < nlim:
             n += 1
             train = self.train_delta_round(epsilon)
+        print('final gamma:', self.gamma)
         return
         
     
@@ -140,10 +150,12 @@ class perceptron:
         #plusses is nubmer of +1s in input
         performances = []
         for N in Ns:
-            self.train(N=N, method = method, task = task)
+            
             performance = []
-            for i in range(ntrial):
-                performance.append(self.queries(nquery, plusses=plusses))
+            for j in range(10): #three separate nets
+                self.train(N=N, method = method, task = task)
+                for i in range(ntrial):
+                    performance.append(self.queries(nquery, plusses=plusses))
             performance = np.mean(performance)
             performances.append(performance)
             
@@ -164,7 +176,7 @@ class perceptron:
         for nplus in range(nmax+1): #number of +1 vs -1
             print('new nplus:', nplus)
             Ns, performances = self.test_performance(method = method, Plot=False, plusses=nplus, task=task)
-            plt.plot(Ns, performances, color = cols[nplus], linestyle='-')
+            plt.plot(Ns, performances, color = str(1-(nplus+1)/(nmax+1)), linestyle='-')
             print(sum(np.array(performances) < 0.95))
         plt.legend([str(val) for val in range(nmax+1)])
         
