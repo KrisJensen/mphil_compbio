@@ -366,10 +366,10 @@ if subsample
     train_ts = train_ts[inds, :]
 end
 
-shift = false #if shift, shift out data to zero mean
+shift = true #if shift, shift our data to zero mean
 if shift
-    train_us = train_us .- mean(train_us, dims=2)
-    test_us = test_us .- mean(test_us, dims=2)
+    train_us = train_us .+ 0.625 #.- mean(train_us, dims=2)
+    test_us = test_us .+ 0.625 #.- mean(test_us, dims=2)
 end
 
 ninput, nus = size(train_us) #number of inputs and input units
@@ -379,7 +379,7 @@ nzs = size(train_ts)[2]
 N = 10 #number of hidden units
 eta = 0.01 #learning rate
 nepoch = 20 #number of epochs to train for
-bias = false #do we include bias units?
+bias = true #do we include bias units?
 transfer = "tanh" #specify transfer function (tanh or sigmoid)
 
 d = Normal(0, 0.01) #start with random weights in linear regime

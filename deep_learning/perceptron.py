@@ -25,7 +25,7 @@ class perceptron:
     def train(self, N = 100, method = 'heb', Print = False, task = 'sum'):
         
         train_data = np.random.choice([1,-1], (self.dim,N)) #training patterns
-        if task == 'sum': vs = np.sign(np.sum(train_data,0)-self.gamma)
+        if task == 'sum': vs = np.sign(np.sum(train_data,0)+0.01)
         elif task == 'product': vs = np.sign(np.prod(train_data, 0))
         else:
             print('task not recognized')
@@ -74,7 +74,7 @@ class perceptron:
         while train and n < nlim:
             n += 1
             train = self.train_perceptron_round(epsilon)
-        print('final gamma:', self.gamma)
+        #print('final gamma:', self.gamma)
         return
     
     def train_delta_round(self, epsilon, thresh = 10**(-6), Print=False):
@@ -103,7 +103,7 @@ class perceptron:
         while train and n < nlim:
             n += 1
             train = self.train_delta_round(epsilon)
-        print('final gamma:', self.gamma)
+        #print('final gamma:', self.gamma)
         return
         
     
@@ -129,7 +129,7 @@ class perceptron:
                 #print(queries[:,i])
             
         
-        truth = np.sign(np.sum(queries, 0)-self.gamma)
+        truth = np.sign(np.sum(queries, 0)+0.001)
         vs = np.sign(np.dot(self.ws, queries)-self.gamma)
         performance = sum(np.array(vs) == np.array(truth))/nquery
         
@@ -171,8 +171,8 @@ class perceptron:
         
     def test_by_plus1(self, method = 'heb', fname='figures/test.png', task = 'sum'):
         plt.figure()
-        nmax = 5
-        cols = [[0,0,1], [0,1,0], [0,0,1], [0,1,1], [1,0,1], [1,1,0]]
+        nmax = 6
+        #cols = [[0,0,1], [0,1,0], [0,0,1], [0,1,1], [1,0,1], [1,1,0]]
         for nplus in range(nmax+1): #number of +1 vs -1
             print('new nplus:', nplus)
             Ns, performances = self.test_performance(method = method, Plot=False, plusses=nplus, task=task)
@@ -212,9 +212,9 @@ p.compare(fname='figures/compare_prod.png', task='product')
 p.test_by_plus1(method='delta', fname = 'figures/nplus_delta.png')
 
 
-p = perceptron()
-p.train(N=100, method='perceptron', task='product')        
-p.query(np.random.choice([-1,1], 10), Print = True)
+#p = perceptron()
+#p.train(N=100, method='perceptron', task='product')        
+#p.query(np.random.choice([-1,1], 10), Print = True)
 #p.test_performance(method='perceptron', task = 'product')
 p.test_by_plus1(method='perceptron', fname = 'figures/nplus_perceptron.png')
 
