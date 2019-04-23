@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 14 11:40:47 2019
-
-@author: kris
+Code for manipulating and plotting trees
 """
 
 import matplotlib.pyplot as plt
@@ -12,13 +10,18 @@ import networkx as nx
 
 
 def topological_sort(G, relabel = False):
+    '''function for sorting the nodes of a tree such that
+    all parent nodes in the resulting list have a lower index than their
+    child nodes'''
     nodes = [int(n) for n in G.nodes]
     inds = {}
-    for i, n in enumerate(nodes): inds[n] = i
+    for i, n in enumerate(nodes): inds[n] = i #start with default order
     
     done = False
     while not done:
+        #repeat until the nodes are sorted
         done = True
+        #run through all pairs of nodes and swap indices if wrong order
         for i in nodes:
             for j in nodes:
                 if j in G.neighbors(i):
@@ -33,14 +36,12 @@ def topological_sort(G, relabel = False):
         nodes[ind] = node
         
     if not relabel: return nodes
-    
-    else:
+    else: #relabel nodes as described in assignment
         nodes.reverse()
         for i, n in enumerate(nodes):
             print(n, i)
             G.node[n]['newlabel'] = str(i+1)
             
-        
         nodes.reverse()
         return nodes, G
     
@@ -48,7 +49,8 @@ def topological_sort(G, relabel = False):
 
 
 def parse_tree(fname = "tree.dat"):
-    G = nx.DiGraph()
+    '''parse data format given in assignment'''
+    G = nx.DiGraph() #use the nx module to store information
     
     f = open(fname, 'r')
     for line in f:
@@ -77,7 +79,6 @@ def parse_tree(fname = "tree.dat"):
         ntot = 0
         nleaves = 0
         nint = 0
-        length = 0
         for daughter in G.neighbors(node):
             ntot += G.node[daughter]['ntot']+1 #also add for this node
             nleaves += G.node[daughter]['nleaves']
@@ -100,12 +101,8 @@ def print_tree(G, relabel = False):
     
     nodesn = nodes[args]
     ntots = ntots[args]
-    #for n in nodesn:
-    #    print(n,":", G.nodes[n]['ntot'], ' (', G.nodes[n]['nleaves'],
-    #          ',', G.nodes[n]['nint'], ')')
         
     print('\n')
-    
     if relabel:
         for n in nodesn:
             lab = G.node[n]['newlabel']
@@ -116,24 +113,34 @@ def print_tree(G, relabel = False):
         for n in nodesn:
             print(n,"&", G.nodes[n]['ntot'], '&', G.nodes[n]['nleaves'],
                   '&', G.nodes[n]['nint'], '&', G.nodes[n]['rootlength'], '\\'+'\\')
-        
     print('\n')
         
     ls = np.array([G.node[n]['rootlength'] for n in G.nodes])
     args = np.argsort(-ls)
-    nodesl = nodes[args]
-    #for n in nodesl:
-    #    print(n,"&", G.nodes[n]['rootlength'])
+    if relabel:
+        for n in nodesn: #print in same format as assignment; default order
+            lab = G.node[n]['newlabel']
+            sucs = list(G.successors(n))
+            if len(sucs) > 0:
+                print('{:5}'.format(str(lab)),
+                      '{:5}'.format(str(G.node[sucs[0]]['newlabel'])),
+                      '{:5}'.format(str(G.edges[(n, sucs[0])]['length'])),
+                      '{:5}'.format(str(G.node[sucs[1]]['newlabel'])),
+                      '{:5}'.format(str(G.edges[(n, sucs[1])]['length'])))
+                
+    if relabel:
+        print('\n')
+        for n in [1,3,4,5,7,10,12]: #print in same format and order as assignment
+            lab = G.node[n]['newlabel']
+            sucs = list(G.successors(n))
+            if len(sucs) > 0:
+                print('{:5}'.format(str(lab)),
+                      '{:5}'.format(str(G.node[sucs[0]]['newlabel'])),
+                      '{:5}'.format(str(G.edges[(n, sucs[0])]['length'])),
+                      '{:5}'.format(str(G.node[sucs[1]]['newlabel'])),
+                      '{:5}'.format(str(G.edges[(n, sucs[1])]['length'])))
+                  
 
-
-
-G = parse_tree()
-#nx.draw(G, with_labels=True)    
-print_tree(G)
-print_tree(G, relabel = True)
-
-
-#assume that ttwo changes do not occur over the course of a single step
 
 def draw_tree(G, relabel = False):
     
@@ -184,9 +191,12 @@ def draw_tree(G, relabel = False):
     if relabel: plt.savefig("figures/tree_relabelled.png")
     else: plt.savefig("figures/tree.png")
     plt.show()
-    
-draw_tree(G)
-draw_tree(G, relabel = True)
+
+G = parse_tree() #parse input file 
+print_tree(G) #print table of nodes and lengths
+print_tree(G, relabel = True) #print relabelled table
+#draw_tree(G) #plot tree
+#draw_tree(G, relabel = True) #plot relabelled tree
 
     
     

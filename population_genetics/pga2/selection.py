@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 15 09:59:20 2019
-
-@author: kris
+Code for time-dependent selection questions
 """
 
 import random
@@ -14,11 +12,14 @@ from numpy.random import poisson
 
 
 def pfix(f, N=100):
+    '''returns the probability of fixation given values of f and N'''
     return (1-np.exp(-2*f))/(1-np.exp(-2*N*f))
 
 
 def plot_summary(ts, n1s, fixed, fname='test', xlim = [-0.05,0.1]):
+    '''plot a series of graphs given values of n1 as a function of t'''
     
+    #plot timeseries
     plt.figure()
     plt.plot(ts, n1s)
     plt.ylim(0,1000)
@@ -27,7 +28,7 @@ def plot_summary(ts, n1s, fixed, fname='test', xlim = [-0.05,0.1]):
     plt.savefig('figures/'+fname+'_selection_trajec.png')
     plt.show()
     
-    
+    #plot histograms
     bins = np.linspace(min(fixed), max(fixed), 100)
     plt.figure()
     plt.hist(fixed, bins=bins)
@@ -39,7 +40,7 @@ def plot_summary(ts, n1s, fixed, fname='test', xlim = [-0.05,0.1]):
     plt.show()
     
     '''
-    
+    also plot predicted distributions
     ns = [n1, 1000-n1]
     xs = bins#np.linspace(-0.02, 0.08, 100)
     ps = [6*pfix(x) for x in xs]
@@ -64,7 +65,7 @@ def plot_summary(ts, n1s, fixed, fname='test', xlim = [-0.05,0.1]):
     '''
     
 def get_dists(xs, lambd=100):
-    
+    '''return theoretical distribution'''
     n1 = 820 #calculate analytically
     ns = [n1, 1000-n1]
     
@@ -79,7 +80,7 @@ def get_dists(xs, lambd=100):
     return ps, exps, counts
     
 def plot_dists():
-    
+    '''plot expected n1 distributions in the different scenarios'''
     xs = np.linspace(-0.1, 0.1, 100)
     ps, exps, counts = get_dists(xs)
     
@@ -139,75 +140,74 @@ def plot_dists():
     plt.savefig('figures/sym_combined_dists.png')
     plt.show()
     
-    
-plot_dists()
+
     
     
 
 def run_sim(N=100, lambd=100, changing = False, tlim=3000000,
             resample = False, fname='test', tau=5*10**(-6), xlim = [-0.05,0.1]):
-
-    change = 0
-    tswitch = poisson(1/tau)
+    '''run simulation as described in the assinment.
+    resample specifies which scenrio we consider, tau specifies the rate
+    of change of the environment. tlim specifies the length of simulation'''
+    
+    change = 0 #start in default environment
+    tswitch = poisson(1/tau) #timescale of switching
     
     f1s = np.random.exponential(1/lambd, 1000) #get an intial fitness at each locus
-    f0s = -f1s
-
+    f0s = -f1s #non-preferred allele
     
     states = np.ones(1000) #all loci start in state 1
-    n1 = 1000
+    n1 = 1000 #we have 1000 loci in state 1
     
-    
-    #tlim = 501000
-    
-    t = 0
+    t = 0 #initialize
     ts = [t]
     n1s = [n1]
     fixed = []
     
-    
-    
     while t < tlim:
-        i = random.randint(0,999)
+        i = random.randint(0,999) #mutate random locus
         old = states[i]
-        if old == 0: f = f1s[i]#f = np.random.exponential(1/lambd)
-        else: f = f0s[i]
-        if resample:
+        if old == 0: f = f1s[i] #switch to allele 1
+        else: f = f0s[i] #switch to allele 0
+        if resample: #draw new fitnesses
             if old == 0: f = np.random.exponential(1/lambd)
             else: f = -np.random.exponential(1/lambd)
-            if change == 1: f = -f
-        
-        #if t > 500000: print(old, f)
-        
-        p = pfix(f)
-        if random.random() < p:
+            if change == 1: f = -f #change in environment
+
+        p = pfix(f) #probability of fixation
+        if random.random() < p: #fix allele
             new = 1-old
             states[i] = new
             n1 += new-old
-            #print('fixed')
-            if t > 500000:
+            if t > 500000: #start collecting distribution after 500000 timesteps
                 fixed.append(f)
                 
         n1s.append(n1)
-        dt = min(10, np.abs( 2*np.log(N-1)/(919*f) )) #but this can give a negative fixation???
+        dt = min(10, np.abs( 2*np.log(N-1)/(919*f) )) #fixation time
         t += dt
-        #print(t)
         ts.append(t)
         
         if changing:
             if t > tswitch:
+                #change environment
                 f1s = -f1s
                 f0s = -f0s
                 change = 1-change
-                tswitch += poisson(1/tau)
-        
+                tswitch += poisson(1/tau) #update switching time
         
     plot_summary(ts, n1s, fixed, fname=fname, xlim = xlim)
     
+        
+#plot_dists() #plot expected distributions
+
+#run simulations with constant environment
+#run_sim(fname='constant', xlim = [-0.035, 0.035]) #scenario 2
+#run_sim(resample = True, fname='resample', xlim=[-0.05,0.1]) #scenario 1
+
+#run simulations with changing environments
 #run_sim(fname='changing', changing=True, xlim = [-0.03, 0.1])
 #run_sim(fname='changing_resample', changing=True, resample = True, xlim=[-0.03,0.1])
-#run_sim(fname='constant', xlim = [-0.035, 0.035])
-#run_sim(resample = True, fname='resample', xlim=[-0.05,0.1])
+
     
 
 #run_sim(fname='tau5e7', changing=True, tau=5*10**(-7), resample=False, xlim = [-0.03, 0.1])
