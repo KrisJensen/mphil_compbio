@@ -49,7 +49,7 @@ function gillespie(x0, deltas; niter = 1000, lambda=1, alpha=1,
     return dts, ts, xs, xweights, rxns
 end
 
-function plot_flux(rxns, xs, dts, ts)
+function plot_flux(rxns, xs, dts, ts; fname="figures/testfluxes.png")
     #plot how the normalized difference in flux changes over time
     #rxns is a matrix of reactions that occurred
 
@@ -68,7 +68,7 @@ function plot_flux(rxns, xs, dts, ts)
         end
     end
     println("\nfinal fluxes: ", normfluxes[:, end], "\n")
-    figure() #plot fluxes
+    figure(figsize = (5,3.5)) #plot fluxes
 
     cols = ["r", "g", "b"]
     for i in 1:3
@@ -76,13 +76,14 @@ function plot_flux(rxns, xs, dts, ts)
     end
     plot([0; coords[end]], [0; 0], "k--")
     legend(["x1", "x2", "x3"])
-    savefig("figures/testfluxes.png")
+    #ylim(-0.02, 0.02)
+    savefig(fname, bbox_inches="tight", dpi=120)
     close()
 
 end
 
 
-function get_noise(dts, xs; tau1=1, tau2=2, tau3=4, Print=true)
+function get_noise(dts, xs; tau1=1, tau2=2, tau3=4, alpha=10, lambda=1, Print=true)
     #return sigma_x^2 / <x>^2 for the different reactions
     N = size(xs)[1] #number of parameters
     x2s = xs.^2
@@ -131,8 +132,17 @@ function get_noise(dts, xs; tau1=1, tau2=2, tau3=4, Print=true)
             eta[j,i] = cov
         end
     end
+    #print(eta)
+    anal_eta = zeros(3,3) #calculate expected analytical values
+    anal_eta[1,1] = 1/(alpha*tau1)
+    anal_eta[2,2] = 1/(alpha*lambda*tau1*tau2) + 1/(alpha*(tau1+tau2))
+    anal_eta[3,3] = 1/(alpha*lambda*tau1*tau3) + 1/(alpha*(tau1+tau3))
+    anal_eta[1,2] = 1/(alpha*(tau1+tau2)); anal_eta[2,1] = anal_eta[1,2]
+    anal_eta[1,3] = 1/(alpha*(tau1+tau3)); anal_eta[3,1] = anal_eta[1,3]
+    anal_eta[2,3] = tau3/(alpha*(tau1+tau3)*(tau2+tau3))+tau2/(alpha*(tau1+tau2)*(tau3+tau2));
+                    anal_eta[3,2] = anal_eta[2,3]
 
-    return intrinsic, extrinsic, noises, eta #return var/mean^2
+    return intrinsic, extrinsic, noises, eta, anal_eta #return var/mean^2
 end
 
 function plot_figs(ts, xs, xweights; fname="figures/test")
@@ -158,13 +168,84 @@ function plot_figs(ts, xs, xweights; fname="figures/test")
     close()
 end
 
+function plot_param_results(fname, param, values, ints, exts, errs,
+                            var_errors, CV32s, rho23s)
+    #plot graphs for questions 2A, 2B and 2E
+
+    #plot intrinsic and extrinsic noise
+    figure(figsize = (5,3.5))
+    cols = ["r", "b", "g"]
+    for i in 2:3
+        plot(values, ints[i,:], cols[i]*"-")
+        plot(values, exts[i,:], cols[i]*"--")
+    end
+    legend(["x2 intrinsic", "x2 extrinsic",
+            "x3 intrinsic", "x3 extrinsic"])
+    xscale("log"); yscale("log")
+    xlabel(param); ylabel("normalized variance")
+    savefig(fname*"_int_ext.png", bbox_inches="tight", dpi=120)
+    close()
+
+    #plot ratio of intrinsic to extrinsic noise
+    figure(figsize = (5,3.5))
+    for i in 2:3
+        plot(values, ints[i,:]./exts[i,:], cols[i]*"-")
+    end
+    legend(["x2 intrinsic/extrinsic",
+            "x3 intrinsic/extrinsic"])
+    xscale("log"); yscale("log")
+    xlabel(param); ylabel("variance")
+    savefig(fname*"_ratio.png", bbox_inches="tight", dpi=120)
+    close()
+
+    #plot histograms of flux errors
+    xmin = minimum(errs); xmax=maximum(errs)
+    #bins = xmin : (xmax-xmin)/199 : xmax
+    for i in 1:3
+        figure(figsize = (5, 3.5))
+        PyPlot.plt[:hist](errs[i,:], 20, color=cols[i])
+        xlabel("relative flux error")
+        ylabel("frequency")
+        maxx = maximum(abs.(errs[i,:]))*1.05
+        xlim(-maxx, maxx)
+        savefig(fname*"_hist"*string(i)*".png", bbox_inches="tight", dpi=120)
+        close()
+    end
+
+    #plot histograms of deviations from covariances
+    inds = [[1 1],[2 2],[3 3],[1 2],[1 3],[2 3]] #matrix indices
+    for i in 1:6
+        figure(figsize = (5, 3.5))
+        #print(var_errors[i,:])
+        PyPlot.plt[:hist](var_errors[i,:], 20)
+        lab = "eta"*string(inds[i][1])*string(inds[i][2])
+        xlabel(lab)
+        ylabel("frequency")
+        maxx = maximum(abs.(var_errors[i,:]))*1.05
+        xlim(-maxx, maxx)
+        savefig(fname*"_hist_eta"*string(i)*".png", bbox_inches="tight", dpi=120)
+        close()
+    end
+
+    #plot rho23 vs CV3/CV2
+    figure(figsize = (5,3.5))
+    plot(CV32s, rho23s, "kx")
+    xlabel(L"CV3/CV2"); ylabel(L"\rho_{23}")
+    savefig(fname*"_rho23_CV32.png", bbox_inches="tight", dpi=120)
+    close()
+end
+
 function vary_params(param, values; fname="figures/test_noise",
                     tau1=3, tau2=2, tau3=4, lambda=1, alpha=10, niter=500000)
     #calculate & plot intrinsic and extrinsic noise for a range of parameters
     #param is name of parameter to vary, values is set of values
     N = length(values) #number of parameter values
     exts = zeros(3, N); ints = zeros(3, N) #store extrinsic and intrinsic noise
-    errs = zeros(3,N) #store relative errors
+    errs = zeros(3,N) #store relative flux errors
+    var_errors = zeros(6,N) #store n11, n22, n33, n12, n13, n23
+    rho23s = zeros(N) #pearson correlations for x2 and x3
+    CV32s = zeros(N) #CV3/CV2
+
     for (i, val) in enumerate(values)
         #find the parameter to vary
         if param == "lambda" lambda = val
@@ -179,40 +260,35 @@ function vary_params(param, values; fname="figures/test_noise",
                                     alpha=alpha, lambda=lambda,
                                     tau1=tau1, tau2=tau2, tau3=tau3)
         #calculate noise terms
-        intrinsic, extrinsic, noises =
-                    get_noise(dts, xs; tau1=tau1, tau2=tau2, tau3=tau3, Print=false)
-        for j in 1:3 #store intrinsic and extrinsic noise
+        intrinsic, extrinsic, noises, eta, anal_eta =
+                    get_noise(dts, xs; tau1=tau1, tau2=tau2, tau3=tau3,
+                            alpha=alpha, lambda=lambda, Print=false)
+
+        #store intrinsic and extrinsic noise
+        for j in 1:3
             ints[j, i] = intrinsic[j]
             exts[j, i] = extrinsic[j]
             #also calculate flux deviation from 0
             errs[j, i] = (sum(rxns[2*j-1,:]) - sum(rxns[2*j,:])
                         ) / sum(xs[:, 1:(end-1)] .* reshape(dts, 1, length(dts)))
         end
-        println(param, " ", i, " ", val, "  err: ", errs[:,i])
-    end
-    figure(figsize = (5,3.5)) #plot intrinsic and extrinsic noise
-    cols = ["r", "b", "g"]
-    for i in 2:3
-        plot(values, ints[i,:], cols[i]*"-")
-        plot(values, exts[i,:], cols[i]*"--")
-        plot(values, ints[i,:]./exts[i,:], cols[i]*":")
-    end
-    legend(["x2 intrinsic", "x2 extrinsic", "x2 int/ext",
-            "x3 intrinsic", "x3 extrinsic", "x3 int/ext"])
-    xscale("log"); yscale("log")
-    xlabel(param); ylabel("variance")
-    savefig(fname*"_noise.png", bbox_inches="tight", dpi=120)
-    close()
 
-    xmin = minimum(errs); xmax=maximum(errs)
-    #bins = xmin : (xmax-xmin)/199 : xmax
-    for i in 1:3
-        figure()
-        PyPlot.plt[:hist](errs[i,:], 20, color=cols[i])
-        savefig(fname*"_hist"*string(i)*".png", bbox_inches="tight", dpi=120)
-        close()
-    end
+        #calculate relative covariance errors
+        for j in 1:6
+            var_errors[j, i] = (eta[inds[j][1], inds[j][2]] -
+                            anal_eta[inds[j][1], inds[j][2]]) /
+                            anal_eta[inds[j][1], inds[j][2]]
+        end
 
+        #calculate rho23 and CV3/CV2
+        rho23s[i] = cor(xs[2,:], xs[3,:])
+        CV32s[i] = sqrt(noises[3]/noises[2]) #CV2 is sqrt(eta_22)
+
+        println(param, " ", i, " ", val, "  err: ", errs[:,i]) #keep track of sim
+    end
+    #plot all of our results
+    plot_param_results(fname, param, values, ints, exts, errs,
+                        var_errors, CV32s, rho23s)
 end
 println("\nnew simulation")
 
@@ -225,24 +301,29 @@ tau2=2 #fixed
 tau3=4 #fixed
 
 tau1=3
-lambda=1
+lambda=0.01
 alpha=10
-niter = 100000
 
 x0 = [0; 0; 0] #initial conditions
-x0 = [alpha*tau1; alpha*tau1*tau2*lambda; alpha*tau1*tau3*lambda]
+x0 = [Int(round(alpha*tau1));
+    Int(round(alpha*tau1*tau2*lambda));
+    Int(round(alpha*tau1*tau3*lambda))]
 
+niter = 100000
 
 dts, ts, xs, xweights, rxns = gillespie(x0, step_size, niter=niter,
                             alpha=alpha, lambda=lambda,
                             tau1=tau1, tau2=tau2, tau3=tau3)
 
-println(get_noise(dts, xs, tau1=tau1, tau2=tau2, tau3=tau3))
+intrinsic, extrinsic, noises, eta, anal_eta =
+        get_noise(dts, xs, tau1=tau1, tau2=tau2, tau3=tau3, alpha=alpha, lambda=lambda)
 plot_figs(ts, xs, xweights)
-plot_flux(rxns, xs, dts, ts)
+#plot_flux(rxns, xs, dts, ts, fname="figures/lambdatest_fluxes.png")
 
 #find noise vs. lambda
-vary_params("lambda", 10 .^ (-2:(4/99):2), fname="figures/test_noise" )
+vary_params("lambda", 10 .^ (-2:(4/99):2),
+            fname="figures/iter"*string(niter)*"_lambda_noise",
+            niter=niter)
 
 #find noise vs. lambda
 #vary_params("lambda", 10 .^ (-2:(4/99):2), fname="figures/lambda_noise.png" )
